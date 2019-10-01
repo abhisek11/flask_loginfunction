@@ -1,6 +1,7 @@
-from flask import Blueprint,render_template,redirect,url_for
-from werkzeug
+from flask import Blueprint,render_template,redirect,url_for,flash,request
+from werkzeug.security import generate_password_hash,check_password_hash
 from . import db 
+from .models import User
 
 auth = Blueprint('auth',__name__)
 
@@ -8,16 +9,21 @@ auth = Blueprint('auth',__name__)
 def login():
     return render_template('login.html')
 
-@auth.route('/signup', method=['POST'])
+@auth.route('/signup')
+def signup():
+    return render_template('signup.html')
+
+@auth.route('/signup', methods=['POST'])
 
 def signup_post():
     email = request.form.get('email')
     name = request.form.get('name')
     password = request.form.get('password')
 
-    user = User.query.filter_by(email = email).first() #if this return a user, then the email already exists in database
-
+    user = User.query.filter_by(email=email).first() #if this return a user, then the email already exists in database
+    print('user',user)
     if user: #if user is found , we want to redirect back to signup page so user can try again 
+        flash('Email address already exists')
         return redirect(url_for('auth.signup'))
 
     # create new user with the form data. Hash the password so plantext version isn't saved.
