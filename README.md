@@ -1,6 +1,6 @@
 # flask_loginfunction
-This is boilerplate application for flask login logout function
-Base code for login and signup  is done with very simple and sofisticated manner 
+This is boilerplate application for flask login logout function,
+The Base code for login and signup is done with very simple and sofisticated manner ,
 so that Developer can use it for the development of their products and projects
 
 ## Features
