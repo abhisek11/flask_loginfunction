@@ -24,16 +24,10 @@ We've done it! We have used Flask-Login and Flask-SQLAlchemy to build a very bas
 
 ### Backend
 
-- [Flask](http://flask.pocoo.org/), obviously.
-- [Flask-Login](https://flask-login.readthedocs.org/en/latest/) for the user accounts.
-- [Flask-SQLAlchemy](https://pythonhosted.org/Flask-SQLAlchemy/) interacting with the database.
-- [Flask-WTF](https://flask-wtf.readthedocs.org/en/latest/) and [WTForms](https://wtforms.readthedocs.org/en/latest/) for the form handling.
-- [Flask-Mail](https://pythonhosted.org/Flask-Mail/) for sending mails.
-- [itsdangerous](http://pythonhosted.org/itsdangerous/) for generating random tokens for the confirmation emails.
-- [Flask-Bcrypt](https://flask-bcrypt.readthedocs.org/en/latest/) for generating secret user passwords.
-- [Flask-Admin](https://flask-admin.readthedocs.org/en/latest/) for building an administration interface.
-- [Flask-Script](https://flask-script.readthedocs.io/en/latest/) for managing the app.
-- [structlog](http://structlog.readthedocs.io/en/stable/) for logging.
-- [Flask-DebugToolBar](https://flask-debugtoolbar.readthedocs.io/en/latest/) for adding a performance toolbar in development.
-- [gunicorn](http://gunicorn.org/) for acting as a reverse-proxy for Nginx.
-- [Flask-Stripe](http://stripe.com/) for subscription billing.
+-Use the Flask-Login library for session management
+-Use the built-in Flask utility for hashing passwords
+-Add protected pages to our app for logged in users only
+-Use Flask-SQLAlchemy to create a user model
+-Create sign up and login forms for our users to create accounts and login
+-Flash error messages back to users when something goes wrong
+-Use information from the user's account to display on the profile page
