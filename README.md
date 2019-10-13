@@ -26,7 +26,9 @@ congrats We've done it! #Happy python coding .
 There are three main packages we need for our project:
 
 -Flask.
+
 -Flask-Login - to handle the user sessions after authentication.
+
 -Flask-SQLAlchemy - to represent the user model and interface with our database.
 
 ## How to run 
@@ -55,11 +57,17 @@ Type "help", "copyright", "credits" or "license" for more information.
 ### Backend
 
 -Use the Flask-Login library for session management.
+
 -Use the built-in Flask utility for hashing passwords.
+
 -Add protected pages to our app for logged in users only.
+
 -Use Flask-SQLAlchemy to create a user model.
+
 -Create sign up and login forms for our users to create accounts and login.
+
 -Flash error messages back to users when something goes wrong.
+
 -Use information from the user's account to display on the profile page.
 
 for any kind of bug please open a PR or raise a issue thanks .
