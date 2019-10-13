@@ -54,14 +54,15 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 ### Backend
 
--Use the Flask-Login library for session management
--Use the built-in Flask utility for hashing passwords
--Add protected pages to our app for logged in users only
--Use Flask-SQLAlchemy to create a user model
--Create sign up and login forms for our users to create accounts and login
--Flash error messages back to users when something goes wrong
--Use information from the user's account to display on the profile page
+-Use the Flask-Login library for session management.
+-Use the built-in Flask utility for hashing passwords.
+-Add protected pages to our app for logged in users only.
+-Use Flask-SQLAlchemy to create a user model.
+-Create sign up and login forms for our users to create accounts and login.
+-Flash error messages back to users when something goes wrong.
+-Use information from the user's account to display on the profile page.
 
-for any kind of bug please open a PR or raise a issue thanks 
-Abhisek singh 
-@email :- raizadaabhi11@gmail.com
+for any kind of bug please open a PR or raise a issue thanks .
+please feel free to use it , if anyone like to extend its features please feel free to mail me 
+Abhisek singh .
+@email :- raizadaabhi11@gmail.com.
